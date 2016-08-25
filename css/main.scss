@@ -119,12 +119,20 @@ article {
   }
 
   img {
-      margin: 3rem;
-      max-width: 90%;
+      margin: 3rem auto;
+      width: 90%;
       height: auto;
       display: block;
       border-radius: 3px;
       box-shadow: 0px 15px 102px -10px rgba(0,0,0,0.75);
+
+      &:before {
+          content: '<center>';
+      }
+
+      &:after {
+          content: '</center>';
+      }
   }
 }
 
@@ -165,8 +173,17 @@ article {
 }
 
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 550px) {
   .page-heading {
     font-size: 6rem;
+  }
+  .post-content, .post-excerpt {
+      img {
+          width: 100%;
+      }
+  }
+  .ten.columns {
+      width: 100%;
+      margin-left: 0;
   }
 }
