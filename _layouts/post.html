@@ -10,7 +10,7 @@ layout: default
                     {{ page.title }}
                 </h1>
                 <span class="post-meta">
-                    Posted on {{ page.date | date: "%b %-d, %Y" }} • <a href="{{ page.url }}#disqus_thread">Comment</a> {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+                    Posted on {{ page.date | date: "%b %-d, %Y" }} • <a href="{{site.baseurl}}{{ page.url }}#disqus_thread">Comment</a> {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
                 </span>
             </header>
             <article class="post-content">

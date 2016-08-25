@@ -13,7 +13,7 @@ layout: default
                     </a>
                 </h1>
                 <span class="post-meta">
-                    Posted on {{ post.date | date: "%b %-d, %Y" }} • <a href="{{ post.url }}#disqus_thread">Comment</a> {% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}
+                    Posted on {{ post.date | date: "%b %-d, %Y" }} • <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">Comment</a> {% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}
                 </span>
             </header>
             <article class="post-excerpt">
