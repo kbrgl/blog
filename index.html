@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="ten columns offset-by-one">
+        <hr>
+        {% for post in site.posts %}
+        <section class="post">
+            <header class="post-header">
+                <h1>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        {{ post.title }}
+                    </a>
+                </h1>
+                <span class="post-meta">
+                    Posted on {{ post.date | date: "%b %-d, %Y" }} • <a href="{{ post.url }}#disqus_thread">Comment</a> {% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}
+                </span>
+            </header>
+            <article class="post-excerpt">
+                {{ post.content | truncatewords: 80 }}
+            </article>
+        </section>
+        <hr>
+        {% endfor %}
+        <div class="text-align right">
+            <a id="archive-link" href="{{ '/archive.html' | prepend: site.baseurl }}">all posts</a>
+        </div>
+    </div>
+</div>
+<script id="dsq-count-scr" src="//kbrgl.disqus.com/count.js" async></script>
+
