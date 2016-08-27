@@ -5,7 +5,7 @@
 
 $primary-font: "Inconsolata";
 $display-font: "Montserrat";
-$alt-font: "Inconsolata";
+$alt-font: "Roboto Mono";
 
 // the following switches between a flat, modern design
 // and a design with some subtle shadows
@@ -114,8 +114,9 @@ article {
     color: #444;
     font-family: $alt-font;
     margin: 1rem 0;
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
+    letter-spacing: 4px;
   }
 
   img {
